@@ -1,0 +1,18 @@
+{{>navigation}}
+	<div id="wrapper">
+	{{#items}}
+	  {{#WPHeader}}
+			{{>header}}
+		{{/WPHeader}}
+	  {{#WebPageElement}}
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-12">
+				  {{#properties.text}}{{{.}}}{{/properties.text}}
+				</div>
+			  </div>
+			</div><!-- /.container -->
+		{{/WebPageElement}}
+	{{/items}}
+	</div>
+{{>footer}}

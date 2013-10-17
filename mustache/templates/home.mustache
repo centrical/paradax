@@ -1,0 +1,34 @@
+{{>navigation}}
+	<div id="wrapper">
+	{{#items}}
+		{{#WebApplication}}
+			<main class="bs-masthead" id="content" role="main">
+			  <div class="container">
+			  	{{#properties}}
+				<h1>
+					{{#name}}{{{.}}}{{/name}}
+				</h1>
+				<div class="row">
+					<div class="col-sm-12 col-md-10 col-lg-9">
+						<p class="lead">{{#headline}}{{{.}}}{{/headline}}</p>
+						<div class="description">{{#description}}{{{.}}}{{/description}}</div>
+						<br />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-10 col-lg-9">
+						<p>
+						  <a href="{{#properties.downloadUrl}}{{{.}}}{{/properties.downloadUrl}}" class="btn btn-danger btn-lg" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Github']);">View on Github</a>
+						  <a href="{{#properties.featureList}}{{{.}}}{{/properties.featureList}}" class="btn btn-default btn-lg" ">Get started</a>
+						</p>
+					</div>
+					<div class="hidden-sm col-md-2 col-lg-3">
+						<a target="_blank" href="http://www.peecho.com/" title="Peecho"><img alt="Peecho" class="img-rounded img-responsive" src="{{#properties.image}}{{{.}}}{{/properties.image}}"></a>
+					</div>
+			  </div>
+			  {{/properties}}
+			</main>
+		{{/WebApplication}}
+	{{/items}}
+	</div>
+{{>footer}}

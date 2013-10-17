@@ -1,0 +1,31 @@
+{{>navigation}}
+	<div id="wrapper">
+	{{#items}}
+		{{#BlogPosting}}
+			{{>header}}
+  			<div class="container">
+				<div class="row">
+					{{#properties}}
+					<div class="col-md-8 col-sm-12">
+						
+					  <!-- the actual blog post: title/author/date/content -->
+					  <hr>
+					  <p><i class="icon-time"></i> Posted on {{#datePublished}}{{{.}}}{{/datePublished}} by {{#author}}{{#properties.name}}{{{.}}}{{/properties.name}}{{/author}}</p>
+					  <!--<hr>
+					  <img alt="{{#name}}{{{.}}}{{/name}}" src="{{#image}}{{{.}}}{{/image}}" class="img-rounded img-responsive">
+					  <hr>-->
+					  <p class="lead">{{#description}}{{{.}}}{{/description}}</p>
+					  {{#articleBody}}{{{.}}}{{/articleBody}}
+					  <hr>
+					</div>
+						
+					<div class="col-md-4 hidden-sm">
+						<a href="http://www.peecho.com/" title="Peecho"><img alt="Peecho" class="img-rounded img-responsive" src="{{#image}}{{{.}}}{{/image}}"></a>
+					</div>
+					{{/properties}}	
+				</div>
+			</div>
+		{{/BlogPosting}}
+	{{/items}}
+	</div>
+{{>footer}}

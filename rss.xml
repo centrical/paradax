@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+	        <title>Fast food for search engines - Paradax</title>
+	        <description>Separate Bootstrap 3 layouts from semantic data to create web pages with great SEO ... at blazing speed.</description>
+	        <link>http://www.paradax.com/</link>
+	        <lastBuildDate>2013-10-17 13:45:00 +0000</lastBuildDate>
+	        <pubDate>!2013-10-17 13:45:00 +0000</pubDate>
+	        <ttl>1800</ttl>
+	        <item>
+	                <title>Fast food for search engines - Paradax</title>
+	                <description>Separate Bootstrap 3 layouts from semantic data to create web pages with great SEO ... at blazing speed.</description>
+	                <link>http://www.paradax.com/</link>
+	                <guid>home</guid>
+	                <pubDate>2013-10-17 13:45:00 +0000</pubDate>
+	        </item>
+	        <item>
+	                <title>Documentation - Paradax</title>
+	                <description>How to use Bootstrap 3, schema.org microdata and Mustache templates for blazing fast websites with great SEO.</description>
+	                <link>http://www.paradax.com/documentation.html</link>
+	                <guid>documentation</guid>
+	                <pubDate>2013-10-17 13:45:00 +0000</pubDate>
+	        </item>
+	         <item>
+	                <title>FAQ - Paradax</title>
+	                <description>Frequently asked questions about project Paradax</description>
+	                <link>http://www.paradax.com/faq.html</link>
+	                <guid>faq</guid>
+	                <pubDate>2013-10-17 13:45:00 +0000</pubDate>
+	        </item>
+	         <item>
+	                <title>About - Paradax</title>
+	                <description>How project Paradax started</description>
+	                <link>http://www.paradax.com/about.html</link>
+	                <guid></guid>
+	                <pubDate>2013-10-17 13:45:00 +0000</pubDate>
+	        </item>
+	         <item>
+	                <title>Blog - Paradax</title>
+	                <description>Blog example of using Bootstrap 3 Mustache templates with microdata</description>
+	                <link>http://www.paradax.com/blog.html</link>
+	                <guid></guid>
+	                <pubDate>2013-10-17 13:45:00 +0000</pubDate>
+	        </item>
+	         <item>
+	                <title>Bootstrap: the good, the bad and the ugly - Paradax</title>
+	                <description></description>
+	                <link>http://www.paradax.com/bootstrap-good-bad-ugly.html</link>
+	                <guid></guid>
+	                <pubDate>2013-10-17 13:45:00 +0000</pubDate>
+	        </item>
+	        
+	        
+	</channel>
+</rss>

@@ -1,0 +1,34 @@
+{{>navigation}}
+	<div id="wrapper">
+		{{#items}}
+			{{#WPHeader}}
+				{{>header}}
+			{{/WPHeader}}
+		{{/items}}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 sidebar">
+					<ul class="nav nav-stacked nav-pills">
+						{{#items}}
+							{{#TechArticle}}
+								{{>sidebar}}
+							{{/TechArticle}}
+					  	{{/items}}
+					</ul>
+				</div>
+				<div class="col-md-9 col-sm-8">
+					{{#items}}
+						{{#TechArticle}}
+							{{#properties}}
+								<a id="{{#properties.name}}{{{.}}}{{/properties.name}}" />
+								<h2>{{#headline}}{{{.}}}{{/headline}}</h2>
+								{{#articleBody}}{{{.}}}{{/articleBody}}
+							{{/properties}}
+						{{/TechArticle}}
+					{{/items}}
+				</div>
+		 </div>
+	</div><!-- /.container -->
+</div>
+
+{{>footer}}

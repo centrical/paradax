@@ -1,0 +1,42 @@
+{{>navigation}}
+	<div id="wrapper">
+	{{#items}}
+		
+		{{#WPHeader}}
+			{{>header}}
+		{{/WPHeader}}
+
+		{{#Blog}}
+		<div class="container">
+			{{#properties}}
+				{{#blogPost}}
+					{{#properties}}
+						<div class="row">
+							<div class="col-md-4">
+								<a href="{{#url}}{{{.}}}{{/url}}" title="{{#name}}{{{.}}}{{/name}}">
+									<img src="{{#image}}{{{.}}}{{/image}}" class="img-responsive img-rounded">
+								</a>
+							</div>
+							<div class="col-md-8">
+								<h3><a href="{{#url}}{{{.}}}{{/url}}" title="{{#name}}{{{.}}}{{/name}}">{{#name}}{{{.}}}{{/name}}</a></h3>
+								<p>
+									by {{#author}}
+										<a target="_blank" href="{{#properties.sameAs}}{{{.}}}{{/properties.sameAs}}" title="{{#properties.name}}{{{.}}}{{/properties.name}}" >
+											{{#properties.name}}{{{.}}}{{/properties.name}}
+										</a>
+										{{/author}}
+								</p>
+								<p><em>{{#headline}}{{{.}}}{{/headline}}</em></p>
+								<p>{{#description}}{{{.}}}{{/description}}</p>
+								<a class="btn btn-info" href="{{#url}}{{{.}}}{{/url}}" title="{{#name}}{{{.}}}{{/name}}">Read More <i class="icon-chevron-right"></i></a>
+							</div>
+						</div>
+						<hr />
+					{{/properties}}
+				{{/blogPost}}
+			{{/properties}}	
+		</div>
+		{{/Blog}}
+	{{/items}}
+	</div>
+{{>footer}}	 

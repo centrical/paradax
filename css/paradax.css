@@ -1,0 +1,176 @@
+
+/* Global Styles */
+
+html, body {
+	height:100%;
+	background-color: #ffffff;
+}
+
+ /* Masthead (headings and download button) */
+.bs-masthead {
+  position: relative;
+  padding: 30px 15px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.bs-masthead h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: #fff;
+}
+.bs-masthead .btn-outline-inverse {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px 24px;
+  font-size: 24px;
+}
+
+.bs-masthead .description a {
+	color: #333333;
+}
+/* Links to project-level content like the repo, Expo, etc */
+.bs-masthead-links {
+  margin-bottom: 20px;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.bs-masthead-links li {
+  display: inline-block;
+  padding: 4px 8px;
+}
+.bs-masthead-links a {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .bs-masthead {
+    text-align: left;
+    padding-top:    50px;
+    padding-bottom:0px;
+  }
+  .bs-masthead h1 {
+    font-size: 100px;
+  }
+  .bs-masthead .lead {
+    margin-right: 25%;
+    font-size: 30px;
+  }
+  .bs-masthead-links {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by its height */
+	margin: 0 auto -250px;
+	/* Pad bottom by footer height plus 50px extra padding for air */
+	padding: 50px 0 300px 0;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  min-height: 250px;
+  background-color: #333333;
+}
+#footer a, #footer h3 {
+	color: #c0d9d5;
+}
+#footer a.github-logo:hover  {
+	text-decoration:none;
+}
+
+#home #wrapper {
+	margin-bottom:0;
+	background: #98C5CB;
+	/*background: url(http://placehold.it/1920x1080) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
+.header {
+	background: #98C5CB;
+	margin-bottom: 24px;
+}
+.header h1.page-header {
+	border-bottom: none;
+	margin: 48px 0 30px;
+	
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #ffffff;
+}
+.tab-pane {
+	margin-top: 15px;
+}
+
+
+/* Page Sections */
+.section,
+.section-colored {
+	padding: 50px 0;
+}
+
+.section-colored {
+	background-color: #e1e1e1; /* change this to change the background color of a colored section */
+}
+
+.sidebar {
+	margin-top: 20px;
+}
+
+.sidebar ul {
+	background: #efefef;
+	border-radius: 5px;
+	padding: 5px;
+	border: 0px solid #cccccc;
+}
+/* Social Icons Styles */
+.list-social-icons {
+	margin-bottom: 45px;
+}
+
+.tooltip-social a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.facebook-link a:hover {
+	color: #3b5998;
+}
+
+.linkedin-link a:hover {
+	color: #007fb1;
+}
+
+.twitter-link a:hover {
+	color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+	color: #d14836;
+}
+
+/* 404 Page Styles */
+.error-404 {
+	font-size: 8em;
+}

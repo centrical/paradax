@@ -1,0 +1,39 @@
+{{>navigation}}
+	<div id="wrapper">
+	{{#items}}
+		{{#WPHeader}}
+			{{>header}}
+		{{/WPHeader}}
+		{{#AboutPage}}
+			<div class="container">
+			  <div class="row">
+
+				<div class="col-md-6">
+				  <img alt="Peecho" class="img-rounded img-responsive" src="/images/peecho_social.png">
+				</div>
+				<div class="col-md-6">
+					{{#properties}}
+						<h2>{{#name}}{{{.}}}{{/name}}</h2>
+						<p class="lead">{{#description}}{{{.}}}{{/description}} </p>
+						<blockquote>{{#about}}{{{.}}}{{/about}} </blockquote>
+						<p>
+							<small>
+								Says 
+								{{#author}}
+									{{#properties}}
+									<a target="_blank" href="{{#properties.sameAs}}{{{.}}}{{/properties.sameAs}}" title="{{#properties.name}}{{{.}}}{{/properties.name}}" >
+										{{#name}}{{{.}}}{{/name}}
+									</a>, {{#jobtitle}}{{{.}}}{{/jobtitle}}
+									{{/properties}}
+								{{/author}}
+							</small>
+						</p>
+						{{#properties.text}}{{{.}}}{{/properties.text}}
+					{{/properties}}
+				</div>
+			  </div>
+			</div><!-- /.container -->
+		{{/AboutPage}}
+	{{/items}}
+	</div>
+{{>footer}}

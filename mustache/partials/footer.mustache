@@ -1,0 +1,25 @@
+<footer id="footer" class="section">
+	<div class="container">
+		<div class="row">
+			{{#items}}
+				{{#WPFooter}}
+					<div class="col-md-3">
+						{{#properties}}
+							<h3>{{#name}}{{{.}}}{{/name}}</h3>
+							{{^description}}
+							<ul class="list-unstyled">
+								{{#text}}<li>{{{.}}}</li>{{/text}}
+							</ul>
+							{{/description}}
+							{{#description}}{{{.}}}{{/description}}
+						{{/properties}}
+					</div>
+				{{/WPFooter}}
+			{{/items}}
+			<div class="col-md-3">
+				<h3 itemprop="name">Github</h3>
+				<a class="github-logo" target="_blank" href="https://github.com/centrical/paradax" title="Paradax"><i class="icon-github-alt icon-5x"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
