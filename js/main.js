@@ -17,7 +17,6 @@ requirejs.config(
 			"getPartials": "util/getPartials",
 			"getTemplates": "util/getTemplates",
 			"chooseTemplate": "util/chooseTemplate",
-			"applyBootstrap": "util/applyBootstrap",
 			"templates": "../mustache/templates",
 			"partials": "../mustache/partials"
 		},
@@ -56,10 +55,6 @@ requirejs.config(
 			"chooseTemplate":{
 				deps: ["json2", "jquery"],
 				exports: "chooseTemplate"
-			},
-			"applyBootstrap":{
-				deps: ["json2", "jquery", "bootstrap"],
-				exports: "applyBootstrap"
 			}
 		},
 		hgn : {
