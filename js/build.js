@@ -18,7 +18,6 @@
 		"getPartials": "util/getPartials",
 		"getTemplates": "util/getTemplates",
 		"chooseTemplate": "util/chooseTemplate",
-		"applyBootstrap": "util/applyBootstrap",
 		"templates": "../mustache/templates",
 		"partials": "../mustache/partials"
     },

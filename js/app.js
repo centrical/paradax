@@ -1,4 +1,4 @@
-define(["jquery", "getMicrodata", "getTemplates", "getPartials", "chooseTemplate", "applyBootstrap"], 
+define(["jquery", "getMicrodata", "getTemplates", "getPartials", "chooseTemplate"], 
 		function ($, getMicrodata, getTemplates, getPartials, chooseTemplate, applyBootstrap) {
 	'use strict';
 	return function initialize() {
@@ -11,10 +11,8 @@ define(["jquery", "getMicrodata", "getTemplates", "getPartials", "chooseTemplate
 		// render the right template from the template list
 		$("body").html(getTemplates[templateId](view, getPartials));
 	
-		// apply Bootstrap stuff
-		applyBootstrap();
-	
-		// show body when done
-		$('body').removeClass("loading");
+		// show document when done
+		$('html').removeClass('loading');
+		
 	};
 });
