@@ -51,11 +51,11 @@
 			<div itemprop="articleBody">
 				<p>This project was started with clean development, SEO and performance in mind.</p>
 				<ul>
-<li>First of all, we wanted to separate Bootstrap 3 code from our HTML source to get rid of the <a href="#" title="Bootstrap: the good, the bad and the ugly">mix-up of data with presentation code</a>.</li>
-					<li>Secondly, we wanted our data to be <a href="#" title="Serving Google code that is easy to digest">semantically meaningful and easy to digest by search engines</a>.</li>
-					<li>Third, we wanted it <a href="#" title="Mustache to the rescue">all to be really fast</a>.</li>
+<li>First of all, we wanted to separate Bootstrap 3 layout from our HTML source to get rid of the <a href="/bootstrap-good-bad-ugly.html" title="Bootstrap: the good, the bad and the ugly">mix-up of data with presentation code</a>.</li>
+					<li>Secondly, we wanted our data to be structured and semantically meaningful to search engines.</li>
+					<li>Third, we wanted it all to be really fast.</li>
 				</ul>
-<p>The result is shown in this website. The HTML source code consists of only <em>microdata</em> from Schema.org, while the resulting DOM view is rendered with client side Mustache templates based on Bootstrap 3. 
+<p>The result is shown in this website. The HTML source code is structured with <em>microdata</em> elements from Schema.org only, while the resulting DOM view is rendered with client side Mustache templates based on Bootstrap 3. 
 				It is not just really speedy, but it serves your HTML to search engines just the way they like it.</p>
 			</div>
 		</div>
@@ -66,13 +66,13 @@
 				What's in the box?
 			</h2>
 			<div itemprop="articleBody">
-				<p>Before we start: we assume that you have some background in working with <a target="_blank" href="http://jquery.com/" title="Jquery">Jquery</a> and <a target="_blank" href="http://getbootstrap.com/" title="Bootstrap 3">Bootstrap 3</a>. 
+				<p>Before we start: we assume that you have some background in working with <a target="_blank" href="http://jquery.com/" title="jQuery">jQuery</a> and <a target="_blank" href="http://getbootstrap.com/" title="Bootstrap 3">Bootstrap 3</a>. 
 				It also helps if you know things like <a target="_blank" href="http://en.wikipedia.org/wiki/Asynchronous_module_definition" title="AMD">AMD</a> - but you can figure that our from the code, too.</p>
 			
 				<p>The Paradax <a target="_blank" href="http://github.com/" title="Paradax">source code on Github</a> contains the following libs. It helps if you know what they do.</p>
 				<ul>
 <li>
-<a itemprop="relatedLink" target="_blank" href="http://jquery.com/" title="Jquery">Jquery</a> - version  1.10.2</li>
+<a itemprop="relatedLink" target="_blank" href="http://jquery.com/" title="jQuery">jQuery</a> - version  1.10.2</li>
 					<li>
 <a itemprop="relatedLink" target="_blank" href="http://getbootstrap.com/" title="Bootstrap 3">Bootstrap 3</a> - customized version with fewer components</li>
 					<li>
@@ -91,11 +91,14 @@
 				HTML with microdata
 			</h2>
 			<div itemprop="articleBody">
-				<p>Microdata is a syntax for embedding machine-readable metadata in HTML. It intends to make HTML semantically meaningful.
-				Specifically, the microdata as proposed on <a target="_blank" href="http://schema.org/" title="Schema.org">Schema.org</a> can be used by developers to markup their pages in ways recognized by major search providers. 
-				The project is backed by <a target="_blank" href="http://google.com/" title="Google">Google</a>, <a target="_blank" href="http://yandex.ru/" title="Yandex">Yandex</a>, <a target="_blank" href="http://bing.com/" title="Bing">Bing</a>, <a target="_blank" href="http://yahoo.com/" title="Yahoo">Yahoo</a> and more.</p>
+				<p><em>Microdata</em> is a syntax for embedding machine-readable metadata in HTML. 
+				The microdata structure from <a itemprop="relatedLink" target="_blank" href="http://schema.org/" title="Schema.org">Schema.org</a> can be used by developers to make search engines understand the <em>meaning</em> of what is in their code. 
+				It's like a common language for search engines. 
+				The project is backed by <a target="_blank" href="http://google.com/" title="Google">Google</a>, <a target="_blank" href="http://yandex.ru/" title="Yandex">Yandex</a>, <a target="_blank" href="http://bing.com/" title="Bing">Bing</a>, <a target="_blank" href="http://yahoo.com/" title="Yahoo">Yahoo</a> and more.
+				</p>
 				<h3>Schema.org example</h3>
-				<p>This snippet shows an example of data formatting for the documentation page that you are reading right now. Every chapter is laid out like this without any further structure. View the source code and you will see.</p>
+				<p>This snippet shows an example of data formatting for the documentation page that you are reading right now. 
+				Every chapter is laid out like this without any further layout definitions. View the source code and you will see.</p>
 <pre><code>&lt;div itemscope itemtype="http://schema.org/TechArticle"&gt;
   &lt;h2 itemprop="headline"&gt;
     Fast food for search engines
@@ -115,13 +118,14 @@
 				Mustache templates
 			</h2>
 			<div itemprop="articleBody">
-				<p> Search engines devour microdata easily, but we need its contents also to appear on our web page. Luckily, there is help. <a target="_blank" href="https://github.com/foolip/microdatajs" title="MicrodataJs">MicrodataJS</a> is a jQuery plugin that provides an API for accessing
-				microdata.</p> 
+				<p> Search engines devour microdata easily, but we need its contents also to appear on our web page. 
+				Luckily, there is help. <a target="_blank" href="https://github.com/foolip/microdatajs" title="MicrodataJs">MicrodataJS</a> is a jQuery plugin that provides an API for accessing microdata in a document. So, it turns your microdata into JSON on the fly. We have stripped it down a little for this project. </p>
 				<h3>JSON microdata example</h3>
 				<p>It serves JSON like this.</p>
 <pre><code>{
   "items": [
     {
+      "TechArticle": true,
       "type": [
         "http://schema.org/TechArticle"
       ],
@@ -139,7 +143,7 @@
     }
   ]
 }</code></pre>
-				<p>This stuff is easy to use in client side templates with some Javascript. <a target="_blank" href="http://mustache.github.io/" title="Mustache templates">Mustache</a> is a great choice for client side templates, but there are many more options. 
+				<p>This stuff is easy to use in client side templates. <a target="_blank" href="http://mustache.github.io/" title="Mustache templates">Mustache</a> is a great choice for client side templates, but there are many more options. 
 				However, we like it because it is really simple. </p>
 				<h3>Bootstrap 3 Mustache example with microdata</h3>
 				<p>The following could render a number of chapters on this documentation page wrapped in a Bootstrap row. </p> 
@@ -161,7 +165,7 @@
 				That is why I added the name of each itemType in the microdata JSON as a variable that is set to true if it exists.</p>	
 				<p>Now, you can use the inspector in Chrome or Firefox to see the DOM of any of the Paradax pages - it's all Bootstrap 3.</p>
 				<ul>
-<li><a href="/blog.html" title="Jquery">Blog and blog posts examples</a></li>
+<li><a href="/blog.html" title="jQuery">Blog and blog posts examples</a></li>
 					<li><a href="/faq.html" title="Bootstrap 3">FAQ entries example</a></li>
 					<li><a href="/about.html" title="Mustache templates">About page example</a></li>
 				</ul>
