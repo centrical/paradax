@@ -9,4 +9,4 @@ In your browser, the structured content is automatically extracted with Javascri
 Keywords: jQuery, Bootstrap 3, Mustache, Hogan, microdata, schema.org, Requirejs, Node.js, SEO, search engine optimization, metadata, website performance and speed
 
 Find all documentation here:
-http://ww.paradax.com/documentation.html
+http://www.paradax.com/documentation.html
