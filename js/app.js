@@ -1,5 +1,5 @@
-define(["jquery", "getMicrodata", "getTemplates", "getPartials", "chooseTemplate"], 
-		function ($, getMicrodata, getTemplates, getPartials, chooseTemplate, applyBootstrap) {
+define(["jquery", "getMicrodata", "getTemplates", "getPartials", "chooseTemplate", "bootstrap"], 
+		function ($, getMicrodata, getTemplates, getPartials, chooseTemplate) {
 	'use strict';
 	return function initialize() {
 		// get metadata from page
