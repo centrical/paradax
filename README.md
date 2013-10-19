@@ -1,7 +1,7 @@
 paradax
 =======
 
-Fast food for search engines!
+Fast food for search engines! See the demo at http://www.paradax.com/
 
 What is it
 ----------
@@ -24,5 +24,6 @@ http://www.paradax.com/
 
 Author
 ------
-Sander Nagtegaal
-sander@centrical.com
+Sander Nagtegaal: sander@centrical.com
+
+See http://www.centrical.com/ and http://www.peecho.com/
