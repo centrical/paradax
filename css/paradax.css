@@ -74,7 +74,7 @@ html, body {
 
 /* Set the fixed height of the footer here */
 #footer {
-  min-height: 250px;
+  height: 250px;
   background-color: #333333;
 }
 #footer a, #footer h3 {
@@ -85,7 +85,6 @@ html, body {
 }
 
 #home #wrapper {
-	margin-bottom:0;
 	background: #98C5CB;
 	/*background: url(http://placehold.it/1920x1080) no-repeat center center fixed; 
 	-webkit-background-size: cover;
