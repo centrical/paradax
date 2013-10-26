@@ -5,14 +5,14 @@
    <url>
       <loc>http://www.paradax.com/</loc>
       <lastmod>2013-10-17</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
    </url>
    
    <url>
       <loc>http://www.paradax.com/documentation.html</loc>
       <lastmod>2013-10-17</lastmod>
-      <changefreq>monthly</changefreq>
+      <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    
@@ -20,14 +20,14 @@
       <loc>http://www.paradax.com/faq.html</loc>
       <lastmod>2013-10-17</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+      <priority>0.7</priority>
    </url>
    
    <url>
       <loc>http://www.paradax.com/about.html</loc>
       <lastmod>2013-10-17</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+      <priority>0.6</priority>
    </url>
    
    <url>
@@ -44,4 +44,4 @@
       <priority>0.8</priority>
    </url>
 
-</urlset> 
+</urlset> > 
