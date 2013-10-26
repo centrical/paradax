@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- General page specifics --><title>Paradax blog example</title>
@@ -33,11 +33,10 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-1418324-2', 'paradax.com');
 		  ga('send', 'pageview');
-	   	</script><style>
-	   		.loading {display:none;}
-	   	</style>
+	   	</script><style>.loading {display:none;}</style>
 </head>
 <body id="blog">
+<div class="loading">
 		<div itemscope itemtype="http://schema.org/WPHeader">
 			<h1 itemprop="name">Blog</h1>
 			<span itemprop="headline">About using microdata for SEO and speed</span>
@@ -94,5 +93,64 @@
 				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
 			</ul>
 </div>
-	</body>
+	</div>
+<noscript>
+		<div itemscope itemtype="http://schema.org/WPHeader">
+			<h1 itemprop="name">Blog</h1>
+			<span itemprop="headline">About using microdata for SEO and speed</span>
+			<a itemprop="url" href="/blog.html" title="Permalink">Permalink</a> 
+		</div>
+
+		<div itemscope itemtype="http://schema.org/Blog">
+			<h1 itemprop="name">Blog title</h1>
+			<div itemprop="description">
+				<p>This is a blog.</p>
+			</div>
+
+			<div itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+				<h2 itemprop="name">Bootstrap</h2>
+				<span itemprop="keywords">separation of concerns</span>
+				<h3 itemprop="headline">
+					The good, the bad and the ugly.
+				 </h3>
+				<div itemprop="description">
+				  Bootstrap does not encourage a proper separation of concerns: it mixes up layout and data. 
+				</div>
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+						 Posted by 
+					 <span itemprop="name">Sander Nagtegaal</span>, 
+					 <span itemprop="worksFor">Peecho</span>
+				</span>
+				<img alt="Peecho" itemprop="image" src="/images/peecho_sherlock.png"><a href="/bootstrap-good-bad-ugly.html" itemprop="url" title="Permalink">Permalink</a> 
+				<meta itemprop="datePublished" content="2013-10-16">
+</div>
+
+		</div>
+	
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Project</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax home" itemprop="url" href="/">Home</a></li>
+				<li itemprop="text"><a title="Paradax blog example with microdata" itemprop="url" href="/blog.html">Blog</a></li>
+				<li itemprop="text"><a title="About project Paradax" itemprop="url" href="/about.html">About</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Get started</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax frequently asked questions" itemprop="url" href="/faq.html">FAQ</a></li>
+				<li itemprop="text"><a title="Paradax documentation" itemprop="url" href="/documentation.html">Documentation</a></li>
+				<li itemprop="text"><a title="Paradax on Github" itemprop="url" target="_blank" href="https://github.com/centrical/paradax">Download</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Contact</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax author on Google Plus: Sander Nagtegaal" itemprop="url" target="_blank" rel="author" href="https://plus.google.com/100649887018566228170?rel=author">Google plus</a></li>
+				<li itemprop="text"><a title="Paradax author on Twitter: Sander Nagtegaal" itemprop="url" target="_blank" href="http://twitter.com/centrical">Twitter</a></li>
+				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
+			</ul>
+</div>
+	</noscript>
+</body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- General page specifics --><title>Bootstrap: the good, the bad and the ugly.</title>
@@ -33,11 +33,10 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-1418324-2', 'paradax.com');
 		  ga('send', 'pageview');
-	   	</script><style>
-	   		.loading {display:none;}
-	   	</style>
+	   	</script><style>.loading {display:none;}</style>
 </head>
-<body id="blogPost"> 
+<body id="blogPost">
+<div class="loading"> 
 		<div itemscope itemtype="http://schema.org/BlogPosting">
 			<h2 itemprop="name">Bootstrap</h2>
 			<span itemprop="keywords">search</span>
@@ -109,5 +108,79 @@
 				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
 			</ul>
 </div>
-	</body>
+	</div>
+<noscript> 
+		<div itemscope itemtype="http://schema.org/BlogPosting">
+			<h2 itemprop="name">Bootstrap</h2>
+			<span itemprop="keywords">search</span>
+			<h3 itemprop="headline">
+				The good, the bad and the ugly.
+			 </h3>
+			<div itemprop="description">
+			  The main issue with frameworks like Bootstrap is that they do not encourage a proper separation of concerns: it mixes up layout and data. 
+			</div>
+			<div itemprop="articleBody">
+				<p>
+				Like many of today’s start-ups, Peecho loves to use <a target="_blank" href="http://getbootstrap.com/" title="Bootstrap">Bootstrap 3</a> to quickly create HTML user interfaces. Bootstrap consists of an awesome collection of HTML, CSS and javascript design templates for typography, forms, buttons, navigation and other interface components. You can use it for free.
+				</p>
+				<p>
+				There are some caveats, though. Like many other front-end frameworks, Bootstrap does not really encourage a proper separation of concerns. It uses class names and structure that are only there to help in the presentation of things - they don’t really mean anything. An example is the grid system, in which the relative width of an element can be set by adding class names like “col-lg-something”.  
+				</p>
+<pre><code>&lt;div class="row"&gt;
+  &lt;div class="col-lg-6"&gt;Sander&lt;/div&gt;
+  &lt;div class="col-lg-6"&gt;Sander works at Peecho&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<p>
+				If you need to change the width for this element, this method forces you to change the code on every single web page that contains this particular layout. This mix-up goes <a target="_blank" href="http://ruby.bvision.com/blog/please-stop-embedding-bootstrap-classes-in-your-html" title="Bootstrap">against many programming lessons</a>, as explained clearly by the W3C QA tip <a target="_blank" href="http://www.w3.org/QA/Tips/goodclassnames" title="W3C QA tip">Use class with semantics in mind</a>.
+				</p>
+				<blockquote>
+				“Good names don’t change. Think about why you want something to look a certain way, and not really about how it should look. Looks can always change, but the reasons for giving something a look stay the same.”
+				</blockquote>
+				<p>
+				So, the previous example should really be something like this. 
+				</p>
+<pre><code>&lt;div class="person"&gt;
+  &lt;div class="name"&gt;Sander&lt;/div&gt;
+  &lt;div class="about"&gt;Sander works at Peecho&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<p>
+				But now the Bootstrap magic is gone! Since we are big fans, we decided to look for a way to keep the semantic structure and use Bootstrap at the same time. 
+				</p>
+				<p>Read about our solution on the <a href="http://www.paradax.com/" title="Paradax">Project Paradax</a> website.</p>
+			</div>
+			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+				 Posted by 
+				 <span itemprop="name">Sander Nagtegaal</span>, 
+				 <span itemprop="worksFor">Peecho</span>
+			</span>
+			<img alt="Peecho" itemprop="image" src="/images/peecho_game.png"><a href="/bootstrap-good-bad-ugly.html" itemprop="url" title="Permalink">Permalink</a>
+			<meta itemprop="datePublished" content="2013-10-16">
+</div>
+	
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Project</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax home" itemprop="url" href="/">Home</a></li>
+				<li itemprop="text"><a title="Paradax blog example with microdata" itemprop="url" href="/blog.html">Blog</a></li>
+				<li itemprop="text"><a title="About project Paradax" itemprop="url" href="/about.html">About</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Get started</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax frequently asked questions" itemprop="url" href="/faq.html">FAQ</a></li>
+				<li itemprop="text"><a title="Paradax documentation" itemprop="url" href="/documentation.html">Documentation</a></li>
+				<li itemprop="text"><a title="Paradax on Github" itemprop="url" target="_blank" href="https://github.com/centrical/paradax">Download</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Contact</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax author on Google Plus: Sander Nagtegaal" itemprop="url" target="_blank" rel="author" href="https://plus.google.com/100649887018566228170?rel=author">Google plus</a></li>
+				<li itemprop="text"><a title="Paradax author on Twitter: Sander Nagtegaal" itemprop="url" target="_blank" href="http://twitter.com/centrical">Twitter</a></li>
+				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
+			</ul>
+</div>
+	</noscript>
+</body>
 </html>

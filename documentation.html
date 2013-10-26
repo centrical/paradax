@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- General page specifics --><title>Documentation - Paradax</title>
+<!-- General page specifics --><title>Documentation - Twitter Bootstrap SEO, microdata and performance</title>
 <meta name="description" content="How to use Bootstrap 3, schema.org microdata and Mustache templates for blazing fast websites with great SEO.">
 <meta name="keywords" content="Bootstrap, documentation, manual, get started, microdata, schema.org, Hogan, Mustache, Paradax">
 <!-- Facebook page specifics --><meta property="og:title" content="Documentation - Paradax">
@@ -32,11 +32,10 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-1418324-2', 'paradax.com');
 		  ga('send', 'pageview');
-	   	</script><style>
-	   		.loading {display:none;}
-	   	</style>
+	   	</script><style>.loading {display:none;}</style>
 </head>
 <body id="documentation" itemscope itemtype="http://schema.org/WebPage">
+<div class="loading">
 		<div itemscope itemtype="http://schema.org/WPHeader">
 			<h1 itemprop="name">Documentation</h1>
 			<span itemprop="headline">Get started</span>
@@ -81,7 +80,7 @@
 					<li><a target="_blank" href="http://requirejs.org/" title="RequireJs">RequireJs</a></li>
 					<li><a target="_blank" href="http://twitter.github.io/hogan.js/" title="Twitter Hogan">Hogan</a></li>
 				</ul>
-<p>Furthermore, there is <a href="https://github.com/millermedeiros/requirejs-hogan-plugin" title="requireJs Hogan">plug-in for Hogan and requireJs</a>, a <a target="_blank" href="http://requirejs.org/docs/optimization.html" title="RequireJs optimizer">RequireJs optimizer file</a> and even a <a target="_blank" href="http://nodejs.org/" title="Node JS">Node.js</a> build script. But you can just ignore most of that.</p>
+<p>Furthermore, there is <a href="https://github.com/millermedeiros/requirejs-hogan-plugin" title="requireJs Hogan">plug-in for Hogan and RequireJs</a>, a <a target="_blank" href="http://requirejs.org/docs/optimization.html" title="RequireJs optimizer">RequireJs optimizer file</a> and even a <a target="_blank" href="http://nodejs.org/" title="Node JS">Node.js</a> build script. But you can just ignore most of that.</p>
 			</div>
 		</div>
 
@@ -210,5 +209,181 @@
 				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
 			</ul>
 </div>
-	</body>
+	</div>
+<noscript>
+		<div itemscope itemtype="http://schema.org/WPHeader">
+			<h1 itemprop="name">Documentation</h1>
+			<span itemprop="headline">Get started</span>
+			<a itemprop="url" href="/documentation.html" title="Permalink">Permalink</a> 
+		</div>
+
+		<div itemscope itemtype="http://schema.org/TechArticle">
+			<meta itemprop="name" content="name1">
+<h2 itemprop="headline">
+				Introduction
+			</h2>
+			<div itemprop="articleBody">
+				<p>This project was started with clean development, SEO and performance in mind.</p>
+				<ul>
+<li>First of all, we wanted to separate Bootstrap 3 layout from our HTML source to get rid of the <a href="/bootstrap-good-bad-ugly.html" title="Bootstrap: the good, the bad and the ugly">mix-up of data with presentation code</a>.</li>
+					<li>Secondly, we wanted our data to be structured and semantically meaningful to search engines.</li>
+					<li>Third, we wanted it all to be really fast.</li>
+				</ul>
+<p>The result is shown in this website. The HTML source code is structured with <em>microdata</em> elements from Schema.org only, while the resulting DOM view is rendered with client side Mustache templates based on Bootstrap 3. 
+				It is not just really speedy, but it serves your HTML to search engines just the way they like it.</p>
+			</div>
+		</div>
+
+		<div itemscope itemtype="http://schema.org/TechArticle">
+			<meta itemprop="name" content="name2">
+<h2 itemprop="headline">
+				What's in the box?
+			</h2>
+			<div itemprop="articleBody">
+				<p>Before we start: we assume that you have some background in working with <a target="_blank" href="http://jquery.com/" title="jQuery">jQuery</a> and <a target="_blank" href="http://getbootstrap.com/" title="Bootstrap 3">Bootstrap 3</a>. 
+				It also helps if you know things like <a target="_blank" href="http://en.wikipedia.org/wiki/Asynchronous_module_definition" title="AMD">AMD</a> - but you can figure that our from the code, too.</p>
+			
+				<p>The Paradax <a target="_blank" href="http://github.com/" title="Paradax">source code on Github</a> contains the following libs. It helps if you know what they do.</p>
+				<ul>
+<li>
+<a target="_blank" href="http://jquery.com/" title="jQuery">jQuery</a> - version  1.10.2</li>
+					<li>
+<a target="_blank" href="http://getbootstrap.com/" title="Bootstrap 3">Bootstrap 3</a> - customized version with fewer components</li>
+					<li>
+<a target="_blank" href="https://github.com/foolip/microdatajs" title="MicrodataJs microdata extraction for Schema.org">MicrodataJS</a> - stripped down version for speed</li>
+					<li><a target="_blank" href="http://mustache.github.io/" title="Mustache templates">Mustache</a></li>
+					<li><a target="_blank" href="http://requirejs.org/" title="RequireJs">RequireJs</a></li>
+					<li><a target="_blank" href="http://twitter.github.io/hogan.js/" title="Twitter Hogan">Hogan</a></li>
+				</ul>
+<p>Furthermore, there is <a href="https://github.com/millermedeiros/requirejs-hogan-plugin" title="requireJs Hogan">plug-in for Hogan and RequireJs</a>, a <a target="_blank" href="http://requirejs.org/docs/optimization.html" title="RequireJs optimizer">RequireJs optimizer file</a> and even a <a target="_blank" href="http://nodejs.org/" title="Node JS">Node.js</a> build script. But you can just ignore most of that.</p>
+			</div>
+		</div>
+
+		<div itemscope itemtype="http://schema.org/TechArticle">
+			<meta itemprop="name" content="name3">
+<h2 itemprop="headline">
+				HTML with microdata
+			</h2>
+			<div itemprop="articleBody">
+				<p><em>Microdata</em> is a syntax for embedding machine-readable metadata in HTML. 
+				The microdata structure from <a target="_blank" href="http://schema.org/" title="Schema.org">Schema.org</a> can be used by developers to make search engines understand the <em>meaning</em> of what is in their code. 
+				It's like a common language for search engines. 
+				The project is backed by <a target="_blank" href="http://google.com/" title="Google">Google</a>, <a target="_blank" href="http://yandex.ru/" title="Yandex">Yandex</a>, <a target="_blank" href="http://bing.com/" title="Bing">Bing</a>, <a target="_blank" href="http://yahoo.com/" title="Yahoo">Yahoo</a> and more.
+				</p>
+				<h3>Schema.org example</h3>
+				<p>This snippet shows an example of data formatting for the documentation page that you are reading right now. 
+				Every chapter is laid out like this without any further layout definitions. View the source code and you will see.</p>
+<pre><code>&lt;div itemscope itemtype="http://schema.org/TechArticle"&gt;
+  &lt;h2 itemprop="headline"&gt;
+    Fast food for search engines
+  &lt;/h2&gt;
+  &lt;div itemprop="articleBody"&gt;
+      Bla bla bla
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+				<p>This is a very simple example, but you can do this for <a target="_blank" href="http://schema.org/Person" title="Schema.org">people</a>, <a target="_blank" href="http://schema.org/Organization" title="Schema.org Organization">organizations</a>, <a target="_blank" href="http://schema.org/WebApplication" title="Schema.org web application">web applications</a> and so on. Browse through this website and view the source for examples.</p>	
+			</div>
+		</div>
+		
+		<div itemscope itemtype="http://schema.org/TechArticle">
+			<meta itemprop="name" content="name4">
+<h2 itemprop="headline">
+				Mustache templates
+			</h2>
+			<div itemprop="articleBody">
+				<p> Search engines devour microdata easily, but we need its contents also to appear on our web page. 
+				Luckily, there is help. <a target="_blank" href="https://github.com/foolip/microdatajs" title="MicrodataJs">MicrodataJS</a> is a jQuery plugin that provides an API for accessing microdata in a document. So, it turns your microdata into JSON on the fly. We have stripped it down a little for this project. </p>
+				<h3>JSON microdata example</h3>
+				<p>It serves JSON like this.</p>
+<pre><code>{
+  "items": [
+    {
+      "TechArticle": true,
+      "type": [
+        "http://schema.org/TechArticle"
+      ],
+      "properties": {
+        "name": [
+          "someName"
+        ],
+        "headline": [
+          "Fast food for search engines"
+        ],
+        "articleBody": [
+          "Bla bla bla"
+        ]
+      }
+    }
+  ]
+}</code></pre>
+				<p>This stuff is easy to use in client side templates. <a target="_blank" href="http://mustache.github.io/" title="Mustache templates">Mustache</a> is a great choice for client side templates, but there are many more options. 
+				However, we like it because it is really simple. </p>
+				<h3>Bootstrap 3 Mustache example with microdata</h3>
+				<p>The following could render a number of chapters on this documentation page wrapped in a Bootstrap row. </p> 
+<pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-9 col-sm-8"&gt;
+      {{#items}}
+        {{#TechArticle}}
+          {{#properties}}
+            &lt;a id="{{#name}}{{{.}}}{{/name}}" /&gt;
+            &lt;h2&gt;{{#headline}}{{{.}}}{{/headline}}&lt;/h2&gt;
+            {{#articleBody}}{{{.}}}{{/articleBody}}
+    	  {{/properties}}
+        {{/TechArticle}}
+      {{/items}}
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>	
+				<p>Mustache is so simple, that it is not possible to use a conditional statement based on the value of a variable. You can only detect if it exists or not. 
+				That is why I added the name of each itemType in the microdata JSON as a variable that is set to true if it exists.</p>	
+				<p>Now, you can use the inspector in Chrome or Firefox to see the DOM of any of the Paradax pages - it's all Bootstrap 3.</p>
+				<ul>
+<li><a href="/blog.html" title="jQuery">Blog and blog posts examples</a></li>
+					<li><a href="/faq.html" title="Bootstrap 3">FAQ entries example</a></li>
+					<li><a href="/about.html" title="Mustache templates">About page example</a></li>
+				</ul>
+</div>
+		</div>
+		
+		<div itemscope itemtype="http://schema.org/TechArticle">
+			<meta itemprop="name" content="name5">
+<h2 itemprop="headline">
+				Optimization
+			</h2>
+			<div itemprop="articleBody">
+				<p>At <a target="_blank" href="http://www.peecho.com/" title="Peecho">Peecho</a>, we use the Twitter Hogan compiler to compile Mustache templates. It really speeds up rendering, especially if you pre-compile your templates on the server. The Paradax build script does that for you. </p>
+				<p>The RequireJs optimizer script wraps all Javascript in a single file, containing all Mustache templates and partials in their compiled state. After initial load, the entire presentation code is cached in your browser.</p>
+				<p>While rendering the templates, we hide the view to prevent <a target="”_blank”" href="%E2%80%9Dhttps://developers.google.com/speed/articles/reflow%E2%80%9D" title="”Reflow”">reflow</a>. This is a web browser process for re-calculating the positions and geometries of elements while rendering the view. Once the rendering is done, you can display the content all at once. </p>
+				<p>If you are really going for it, you can serve all of it from a CDN. We use <a target="_blank" href="https://developers.google.com/speed/pagespeed/" title="Google Page Speed service">Google PageSpeed service</a> and <a target="_blank" href="http://aws.amazon.com/cloudfront" title="AWS Cloudfront">Cloudfront</a> at Peecho. Both are awesome.</p>
+			</div>
+		</div>
+
+	
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Project</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax home" itemprop="url" href="/">Home</a></li>
+				<li itemprop="text"><a title="Paradax blog example with microdata" itemprop="url" href="/blog.html">Blog</a></li>
+				<li itemprop="text"><a title="About project Paradax" itemprop="url" href="/about.html">About</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Get started</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax frequently asked questions" itemprop="url" href="/faq.html">FAQ</a></li>
+				<li itemprop="text"><a title="Paradax documentation" itemprop="url" href="/documentation.html">Documentation</a></li>
+				<li itemprop="text"><a title="Paradax on Github" itemprop="url" target="_blank" href="https://github.com/centrical/paradax">Download</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Contact</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax author on Google Plus: Sander Nagtegaal" itemprop="url" target="_blank" rel="author" href="https://plus.google.com/100649887018566228170?rel=author">Google plus</a></li>
+				<li itemprop="text"><a title="Paradax author on Twitter: Sander Nagtegaal" itemprop="url" target="_blank" href="http://twitter.com/centrical">Twitter</a></li>
+				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
+			</ul>
+</div>
+	</noscript>
+</body>
 </html>

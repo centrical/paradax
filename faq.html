@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- General page specifics --><title>FAQ</title>
@@ -33,11 +33,10 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-1418324-2', 'paradax.com');
 		  ga('send', 'pageview');
-	   	</script><style>
-	   		.loading {display:none;}
-	   	</style>
+	   	</script><style>.loading {display:none;}</style>
 </head>
 <body id="faq">
+<div class="loading">
 		<div itemscope itemtype="http://schema.org/WPHeader">
 			<h1 itemprop="name">FAQ</h1>
 			<span itemprop="headline">Frequently Asked Questions</span>
@@ -140,5 +139,110 @@
 				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
 			</ul>
 </div>
-	</body>
+	</div>
+<noscript>
+		<div itemscope itemtype="http://schema.org/WPHeader">
+			<h1 itemprop="name">FAQ</h1>
+			<span itemprop="headline">Frequently Asked Questions</span>
+			<a itemprop="url" href="/faq.html" title="Permalink">Permalink</a> 
+		</div>
+
+		<div itemscope itemtype="http://schema.org/Article">
+			<meta itemprop="name" content="name1">
+<span itemprop="headline">
+				What is Paradax?
+			</span>
+			<div itemprop="articleBody">
+				<p>
+					Project Paradax is a simple boilerplate to create websites that use only semantic microdata to structure HTML source code - perfect for indexing by Google, Bing and Yandex.
+				</p> 
+				<p>
+					In your browser, the structured content is automatically extracted into JSON data. The result is used to feed compiled Bootstrap 3 Mustache templates that render the actual screens.
+				</p> 
+			</div>
+		</div>
+
+		<div itemscope itemtype="http://schema.org/Article">
+			<meta itemprop="name" content="name2">
+<span itemprop="headline">
+				Why would I want to separate Bootstrap layout from my HTML source content?
+			</span>
+			<div itemprop="articleBody">
+				<p>A framework like Bootstrap does not encourage <em>separation of concerns</em>. It uses class names and structure that are only there to help in the presentation of things - they don’t really mean anything. An example is the grid system, in which the relative width of an element can be set by adding class names like “col-lg-something”.  </p>
+				<p>That is just messy. It is much better to keep your HTML source semantically meaningful, and put the design stuff elsewhere. it will help you to develop better code and will speed up migration to new versions of the framework.
+				</p>
+			</div>
+		</div>
+		
+		<div itemscope itemtype="http://schema.org/Article">
+			<meta itemprop="name" content="name3">
+<span itemprop="headline">
+				Why would I want to use Schema.org microdata as my semantic syntax to structure content? 
+			</span>
+			<div itemprop="articleBody">
+				<p>In short, search engines <em>love</em> it. The microdata from <a target="_blank" href="http://schema.org/" title="Schema.org">Schema.org</a> can be used by developers to markup their pages in ways recognized by major search providers. 
+				The project is backed by <a target="_blank" href="http://google.com/" title="Google">Google</a>, <a target="_blank" href="http://yandex.ru/" title="Yandex">Yandex</a>, <a target="_blank" href="http://bing.com/" title="Bing">Bing</a>, <a target="_blank" href="http://yahoo.com/" title="Yahoo">Yahoo</a> and more.</p>
+			</div>
+		</div>
+
+		<div itemscope itemtype="http://schema.org/Article">
+			<meta itemprop="name" content="name4">
+<span itemprop="headline">
+				Does Google really read the microdata?
+			</span>
+			<div itemprop="articleBody">
+				<p>Nobody really knows to what extend they do that, but some aspects are indexed for sure - you can tell from their search results page. You may think of authorship, rating and some other examples.</p>
+			</div>
+		</div>
+
+		<div itemscope itemtype="http://schema.org/Article">
+			<meta itemprop="name" content="name5">
+<span itemprop="headline">
+				Is Hogan really the fastest way to pre-compile Mustache templates?
+			</span>
+			<div itemprop="articleBody">
+				<p>
+					You may want to check <a target="_blank" href="http://jsperf.com/hadlebars-vs-hogan-vs-mustache" title="Speed test">tests like these</a>. And Twitter uses it, that is social proof, right?
+				</p>
+			</div>
+		</div>
+
+		<div itemscope itemtype="http://schema.org/Article">
+			<meta itemprop="name" content="name6">
+<span itemprop="headline">
+				Can you explain me how RequireJs works?
+			</span>
+			<div itemprop="articleBody">
+				<p>No, not really. Or maybe we could. But it is much easier to just <a target="_blank" href="http://requirejs.org/" title="RequireJs">check the website</a>. It is a great resource.
+			</p>
+</div>
+		</div>
+
+	
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Project</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax home" itemprop="url" href="/">Home</a></li>
+				<li itemprop="text"><a title="Paradax blog example with microdata" itemprop="url" href="/blog.html">Blog</a></li>
+				<li itemprop="text"><a title="About project Paradax" itemprop="url" href="/about.html">About</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Get started</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax frequently asked questions" itemprop="url" href="/faq.html">FAQ</a></li>
+				<li itemprop="text"><a title="Paradax documentation" itemprop="url" href="/documentation.html">Documentation</a></li>
+				<li itemprop="text"><a title="Paradax on Github" itemprop="url" target="_blank" href="https://github.com/centrical/paradax">Download</a></li>
+			</ul>
+</div>
+		<div itemscope itemtype="http://schema.org/WPFooter">
+			<h3 itemprop="name">Contact</h3>
+			<ul>
+<li itemprop="text"><a title="Paradax author on Google Plus: Sander Nagtegaal" itemprop="url" target="_blank" rel="author" href="https://plus.google.com/100649887018566228170?rel=author">Google plus</a></li>
+				<li itemprop="text"><a title="Paradax author on Twitter: Sander Nagtegaal" itemprop="url" target="_blank" href="http://twitter.com/centrical">Twitter</a></li>
+				<li itemprop="text"><a title="Paradax author on Linkedin: Sander Nagtegaal" itemprop="url" target="_blank" href="http://www.linkedin.com/in/centrical/">Linkedin</a></li>
+			</ul>
+</div>
+	</noscript>
+</body>
 </html>
