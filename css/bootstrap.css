@@ -7,6 +7,8 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 article,
 aside,
 details,
@@ -310,9 +312,11 @@ pre code {
 .container:before,
 .container:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .container:after {
   clear: both;
@@ -320,9 +324,11 @@ pre code {
 .container:before,
 .container:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .container:after {
   clear: both;
@@ -334,9 +340,11 @@ pre code {
 .row:before,
 .row:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .row:after {
   clear: both;
@@ -344,9 +352,11 @@ pre code {
 .row:before,
 .row:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .row:after {
   clear: both;
@@ -1315,9 +1325,11 @@ input[type="button"].btn-block {
 .btn-toolbar:before,
 .btn-toolbar:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .btn-toolbar:after {
   clear: both;
@@ -1325,9 +1337,11 @@ input[type="button"].btn-block {
 .btn-toolbar:before,
 .btn-toolbar:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .btn-toolbar:after {
   clear: both;
@@ -1426,9 +1440,11 @@ input[type="button"].btn-block {
 .btn-group-vertical > .btn-group:before,
 .btn-group-vertical > .btn-group:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .btn-group-vertical > .btn-group:after {
   clear: both;
@@ -1436,9 +1452,11 @@ input[type="button"].btn-block {
 .btn-group-vertical > .btn-group:before,
 .btn-group-vertical > .btn-group:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .btn-group-vertical > .btn-group:after {
   clear: both;
@@ -1501,9 +1519,11 @@ input[type="button"].btn-block {
 .nav:before,
 .nav:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .nav:after {
   clear: both;
@@ -1511,9 +1531,11 @@ input[type="button"].btn-block {
 .nav:before,
 .nav:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .nav:after {
   clear: both;
@@ -1655,9 +1677,11 @@ input[type="button"].btn-block {
 .tabbable:before,
 .tabbable:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .tabbable:after {
   clear: both;
@@ -1665,9 +1689,11 @@ input[type="button"].btn-block {
 .tabbable:before,
 .tabbable:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .tabbable:after {
   clear: both;
@@ -1821,9 +1847,11 @@ a.list-group-item:focus {
 .panel-body:before,
 .panel-body:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .panel-body:after {
   clear: both;
@@ -1831,9 +1859,11 @@ a.list-group-item:focus {
 .panel-body:before,
 .panel-body:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .panel-body:after {
   clear: both;
@@ -2259,9 +2289,11 @@ a.list-group-item:focus {
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  
+  /* 1 */
+
   display: table;
-  
+  /* 2 */
+
 }
 .clearfix:after {
   clear: both;

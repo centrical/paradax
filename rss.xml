@@ -8,14 +8,14 @@
 	        <pubDate>2013-10-17 13:45:00 +0000</pubDate>
 	        <ttl>1800</ttl>
 	        <item>
-	                <title>Fast food for search engines - Twitter Bootstrap SEO, microdata and performance</title>
-	                <description>Separate Bootstrap 3 layouts from semantic data to create web pages with great SEO ... at blazing speed.</description>
+	                <title>Fast food for search engines - Twitter Bootstrap SEO, microdata, Mustache and performance</title>
+	                <description>Bootstrap 3 Mustache layouts based on microdata for web pages with great SEO ... at blazing speed.</description>
 	                <link>http://www.paradax.com/</link>
 	                <guid>home</guid>
 	                <pubDate>2013-10-17 13:45:00 +0000</pubDate>
 	        </item>
 	        <item>
-	                <title>Documentation - Twitter Bootstrap SEO, microdata and performance</title>
+	                <title>Documentation - Twitter Bootstrap SEO, microdata, Mustache and performance</title>
 	                <description>How to use Bootstrap 3, schema.org microdata and Mustache templates for blazing fast websites with great SEO.</description>
 	                <link>http://www.paradax.com/documentation.html</link>
 	                <guid>documentation</guid>

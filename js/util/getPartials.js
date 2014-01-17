@@ -1,1 +1,13 @@
-define(["hgn!partials/navigation","hgn!partials/header","hgn!partials/sidebar","hgn!partials/footer"],function(e,t,n,r){var i={navigation:e.template,header:t.template,sidebar:n.template,footer:r.template};return i});
+define(["hgn!partials/navigation", "hgn!partials/header", "hgn!partials/sidebar","hgn!partials/footer"], function (navigation, header, sidebar, footer) {
+	'use strict';
+	
+	var getPartials = {
+		"navigation": navigation.template,
+		"header": header.template,
+		"sidebar": sidebar.template,
+		"footer": footer.template
+	}
+	
+	return getPartials;
+    
+});

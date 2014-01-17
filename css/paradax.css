@@ -1,9 +1,15 @@
 
+/* Global Styles */
+
 html, body {
 	height:100%;
-	background-color: #ffffff;
+	background-color: #f9f9f9;
 }
- 
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+color: #ccc;
+}
+ /* Masthead (headings and download button) */
 .bs-masthead {
   position: relative;
   padding: 30px 15px;
@@ -21,9 +27,11 @@ html, body {
   padding: 18px 24px;
   font-size: 24px;
 }
+
 .bs-masthead .description a {
 	color: #333333;
 }
+/* Links to project-level content like the repo, Expo, etc */
 .bs-masthead-links {
   margin-bottom: 20px;
   padding-left: 0;
@@ -37,6 +45,7 @@ html, body {
 .bs-masthead-links a {
   color: #fff;
 }
+
 @media screen and (min-width: 768px) {
   .bs-masthead {
     text-align: left;
@@ -55,17 +64,20 @@ html, body {
     text-align: left;
   }
 }
+
 #wrapper {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	
+	/* Negative indent footer by its height */
 	margin: 0 auto -250px;
-	
+	/* Pad bottom by footer height plus 50px extra padding for air */
 	padding: 50px 0 300px 0;
 }
+
+/* Set the fixed height of the footer here */
 #footer {
-  height: 250px;
+  min-height: 250px;
   background-color: #333333;
 }
 #footer a, #footer h3 {
@@ -74,6 +86,7 @@ html, body {
 #footer a.github-logo:hover  {
 	text-decoration:none;
 }
+
 #home #wrapper {
    background: #98C5CB;
 }
@@ -86,6 +99,7 @@ html, body {
 	margin: 48px 0 30px;
 	
 }
+
 h1 small,
 h2 small,
 h3 small,
@@ -105,44 +119,58 @@ h6 small,
 .tab-pane {
 	margin-top: 15px;
 }
+
+
+/* Page Sections */
 .section,
 .section-colored {
 	padding: 50px 0;
 }
+
 .section-colored {
-	background-color: #e1e1e1; 
+	background-color: #e1e1e1; /* change this to change the background color of a colored section */
 }
+
 .sidebar {
 	margin-top: 20px;
 }
+
 .sidebar ul {
-	background: #efefef;
+	background: #fff;
 	border-radius: 5px;
 	padding: 5px;
-	border: 0px solid #cccccc;
 }
+
 .sidebar .nav-stacked li a:hover {
-	background: #ccc;
+	background: #efefef;
 }
+/* Social Icons Styles */
 .list-social-icons {
 	margin-bottom: 45px;
 }
+
 .tooltip-social a {
 	text-decoration: none;
 	color: inherit;
 }
+
 .facebook-link a:hover {
 	color: #3b5998;
 }
+
 .linkedin-link a:hover {
 	color: #007fb1;
 }
+
 .twitter-link a:hover {
 	color: #39a9e0;
 }
+
 .google-plus-link a:hover {
 	color: #d14836;
 }
+
+/* 404 Page Styles */
 .error-404 {
 	font-size: 8em;
 }
